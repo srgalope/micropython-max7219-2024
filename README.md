@@ -27,7 +27,7 @@ Full documentation and examples are available on the [official website](https://
 ### Initialize the Driver
 ```python
 from machine import Pin, SPI
-import max7219v2024
+import max7219
 
 # Initialize SPI and MAX7219
 spi = SPI(2, baudrate=10000000, polarity=1, phase=0, sck=Pin(18), mosi=Pin(23))
@@ -65,7 +65,7 @@ for i in range(len(text) * 8):
 ## How to Use the IconsLibrary module
 ### Show an icon
 ```python
-from max7219v2024 import Matrix8x8
+from max7219 import Matrix8x8
 from machine import Pin, SPI
 from  time import sleep
 import IconsLibrary
@@ -88,7 +88,7 @@ display_pattern(matrix,IconsLibrary.HEART_HOLLOW,)
 
 ### Looping through the library
 ```python
-from max7219v2024 import Matrix8x8
+from max7219 import Matrix8x8
 from machine import Pin, SPI
 from  time import sleep
 import IconsLibrary
